@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>for my lovely days</title>
+    
+  </head>
+  <body>
+    <h2 id="clock"></h2>
+    <form class="hidden" id="login-form">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="what's your id?"
+      />
+      <input type="submit" value="Log In" />
+      <!-- button 대신에 input type value 써서 value값 받게 만들어야함..!-->
+    </form>
+
+    <h1 class="hidden" id="greeting"></h1>
+
+    <form id="todo-shape">
+      <input type="text" placeholder="Today's todo is..." required />
+    </form>
+    <ul id="todo-list"></ul>
+
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+
+    <script src="src/app.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/quote.js"></script>
+    <script src="src/bg.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/weather.js"></script>
+  </body>
+</html>
